@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Enviado</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>¡Éxito! Formulario Enviado</h1>
+    <p>Será redirigido a <a href="https://rodrigocarmonaherrera.com">rodrigocarmonaherrera.com</a> en <span id="countdown">4</span> segundos.</p>
+</div>
+<script>
+    var countdownElement = document.getElementById('countdown');
+    var countdown = 4;
+
+    setInterval(function() {
+        if (countdown > 1) {
+            countdown--;
+            countdownElement.textContent = countdown;
+        } else {
+            window.location.href = "https://rodrigocarmonaherrera.com";
+        }
+    }, 1000);
+</script>
+</body>
+</html>

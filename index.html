@@ -1,15 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
     <title>Carmona</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script defer src="assets\js\index.js"> </script>
-    <link href="assets\css\styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Presentacion Web"/>
+    <meta name="keywords" content="Curriculum,Rodrigo Carmona, Analista programador, Chile"/>
+    <meta content="Kamikazejar" name="author"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/IconBlancoOpt.webp">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!-- MK Lightbox -->
+    <link href="assets/css/mklb.css" rel="stylesheet" type="text/css"/>
+    <!-- Icons -->
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Slider -->
+    <link href="assets/css/tiny-slider.css" rel="stylesheet"/>
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Main css File -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" id="theme-opt"/>
+    <link href="assets/css/colors/default.css" rel="stylesheet" id="color-opt">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-offset="20" data-bs-target="#navbar-navlist">
+<!-- Loader -->
+<div id="preloader">
+    <div id="status">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+<!-- Loader -->
+<!-- Navbar Start -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+    <div class="container">
+        <!-- Logo container-->
+        <a class="logo navbar-brand" >Carmona</a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i >
+                <img src="assets/img/menuicon.svg" alt="menu" width="24" height="24"
+            </i>
+
+        </button><!--end button-->
+
+        <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+            <ul id="navbar-navlist" class="navbar-nav navbar-nav-link ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li><!--end nav item-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#conocimientos">Conocimientos</a>
+                </li><!--end nav item-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#portafolio">Portafolio</a>
+                </li><!--end nav item-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li><!--end nav item-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Paginas
+                    </a>
+                    <div class="dropdown-menu rounded m-0" aria-labelledby="navbarDropdown">
+                        <div class="container ml-0 ml-md-0">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a class='dropdown-item' href='http://resume.rodrigocarmonaherrera.com'>Curriculum</a>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </div>
+                </li><!--end nav item-->
+            </ul>
+
+            <ul class="top-right text-right list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
+                <li class="list-inline-item me-2"><a href="https://web.facebook.com/Kmkzecarmonaherrera" target="_blank"><img src="assets/img/facebookicon.svg" alt="Facebook" width="24" height="24"></li>
+                <li class="list-inline-item me-2"><a href="https://www.instagram.com/kamikazejar/" target="_blank"><img src="assets/img/instagramicon.svg" alt="Instagram" width="24" height="24"></li>
+                <li class="list-inline-item me-2"><a href="https://www.linkedin.com/in/rodrigocarmonah/" target="_blank"><img src="assets/img/linkedinicon.svg" alt="Linkedin" width="24" height="24"></li>
+            </ul>
+
+        </div>
+    </div><!--end container-->
+</nav><!--end navbar-->
+<!-- Navbar End -->
+<!-- Hero Area -->
+<div class="hero-area position-relative bg-half-120" style="background-image:url('assets/img/fondoartificial.jpeg')" id="home">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12 align-items-center text-center">
+                <div class="title-heading mt-4 pb-60">
+                    <img src="assets/img/yorodrigocarmona.png" class="img-fluid rounded-circle" alt="Rodrigo Carmona">
+                    <h1 class="heading font-36 text-white mt-4">Buenas👋🏻, Soy Carmona </h1>
+                    <h6 class="designation mb-3 text-white">Soy <span class="text-primary">Analista Programador</span></h6>
+                    <div class="hero-btn mt-4 pt-2"  style="position: relative; z-index: 10;">
+                        <a href="#contacto"  class="btn btn-primary rounded me-2 mb-2" >Contactame</a>
+                        <a href="http://resume.rodrigocarmonaherrera.com" class="btn btn-primary rounded text-white mb-2">Ir a CV <i data-feather="download" class="fea icon-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card public-profile border-0 rounded shadow no-margin" style="z-index: 1;">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-4 text-md-start">
+                                <!--<img src="images/client/05.jpg" class="avatar avatar-large rounded-circle shadow d-block mx-auto" alt="">-->
+                                <div class="about-details key-feature bg-light">
+                                    <div class="media-body content">
+                                        <h6 class="title mb-2">Informacion de contacto</h6>
+                                        <div class="bor-bottom mt-2 mb-2"></div>
+                                        <p class="text-muted mb-2 mt-3 font-14" ><a  class="text-black" href="mailto:RCarmonah@outlook.com">Email:</a > RCarmonah@outlook.com </p >
+                                        <p class="text-muted mb-2 font-14"><a class="text-black">Idioma: </a> Español nativo, inglés medio.</p>
+                                        <p class="text-muted mb-0 font-14"><a  class="text-black">Nacionalidad: </a> Chileno</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9 col-md-8">
+                                <div class="row align-items-end">
+                                    <div class="col-md-12 text-md-start mt-4 mt-sm-0">
+                                        <h4 class="heading me-2">Soy<span class="element text-primary" data-elements="Analista Programador, Java Junior , Gamer"></span>
+                                            <span id="typed" class="text-primary"></span>
+                                        </h4>
+                                        <p class="text-light-muted mt-2">Hola, soy Rodrigo Carmona, analista programador.
+                                            Estoy enfocado en crecer profesionalmente en el ámbito del desarrollo.
+                                            Mis amigos me describen como una persona honesta, leal y estratégica.
+                                            Además, puedo leer documentos en ingles. </p>
+                                        <img src="assets/img/firma.png" height="100" alt="firma">
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section -->
+<!--end section -->
+
+<!--skills section -->
+<section class="section bg-light" id="conocimientos">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="container-title text-center mb-4 pb-2">
+                    <div class="titles">
+                        <h2 class="title text-capitalize mb-4">Conocimientos</h2>
+                        <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Tengo un manejo en los siguientes tecnologias:</p>
+                        <span></span>
+                    </div>
+                    <div class="pyramid">
+                        <div class="level top">
+                            <p>Java<br>HTML, CSS<br>JavaScript, Bootstrap<br>Buen colega para proyectos en grupo</p>
+                            <span class="label">Mis habilidades principales.</span>
+                        </div>
+                        <div class="level bottom">
+                            <p>MySQL(Cruda), Python, Linux, Git, Web Design<br>Vultr, Modelamiento de base de datos, Prototipos, Figma,<br>Casos de uso, Programación orientada a objetos, Patrones estructurales</p>
+                            <span class="label">Con experiencia.</span>
+                        </div>
+                        <div class="level bottom">
+                            <p>Desarrollo ágil, Ubuntu, IntelliJ IDEA, Clean Code, PHP, Pruebas de usabilidad, API<br>Word, PowerPoint, Excel, Picsart, Desarrollo de sitios web, Manejo y gestion de base de datos <br>Leer en español/inglés, Sociabilizar, Musica, Podscast, Anime, Psicologia, Educación financiera, Gaming</p>
+                            <span class="label">Familiaridad y hobbies.</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+        </div><!--end row-->
+
+    </div>
+</section>
+<!-- Skill section End -->
+<section class="section bg-white" id="portafolio">
+    <div class="container" >
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="container-title text-center mb-4 pb-2">
+                    <div class="titles">
+                        <h2 class="title text-capitalize mb-4">Portafolio</h2>
+                        <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Mis siguientes trabajos subidos a GitHub</p>
+                        <span></span>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                    <div class="card-body p-0">
+                        <img src="assets/img/Portafolio2.png" class="img-fluid" alt="work-image">
+                        <div class="overlay-work bg-dark"></div>
+                        <div class="content">
+                            <h5 class="mb-0"><a class='text-white title' href='https://github.com/Kamikazejar/CurriculumWeb'>Mi curriculum web</a></h5>
+                            <h6 class="text-light tag mb-0">Marca personal</h6>
+                        </div>
+                        <div class="icons text-center">
+                            <a href="javascript:void(0)" data-src="assets/img/Portafolio2.png"  data-gallery="myGal" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image">
+                                <i data-feather="camera" class="fea icon-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                    <div class="card-body p-0">
+                        <img src="assets/img/Portafolio1.png" class="img-fluid" alt="work-image">
+                        <div class="overlay-work bg-dark"></div>
+                        <div class="content">
+                            <h5 class="mb-0"><a class='text-white title' href='https://github.com/Kamikazejar/energy-and-water-t1'>Energy and Water SPA</a></h5>
+                            <h6 class="text-light tag mb-0">Pyme</h6>
+                        </div>
+                        <div class="icons text-center">
+                            <a href="javascript:void(0)" data-src="assets/img/Portafolio1.png" data-gallery="myGal" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="camera" class="fea icon-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+
+
+            <div class="col-12 mt-4 pt-2">
+                <div class="text-center">
+                    <a class='btn btn btn-primary rounded' target="_blank" href='https://github.com/Kamikazejar'>Github<i></i></a>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div>
+    <!-- End container -->
+</section>
+<!-- Projects End -->
+<!-- Contact Start -->
+<section class="section bg-light" id="contacto">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="container-title text-center mb-4 pb-2">
+                    <div class="titles">
+                        <h2 class="title text-capitalize mb-4">Contáctame!</h2>
+                        <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Mi informacion de contacto es:</p>
+                        <span></span>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <i data-feather="phone" class="fea icon-md"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Teléfono</h5>
+                        <p class="text-light-muted">Respondo rapidamente por Whatsapp</p>
+                        <a href="https://wa.me/56978035462" class="text-primary" target="_blank">+569 7803 5462</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <i data-feather="mail" class="fea icon-md"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Email</h5>
+                        <p class="text-light-muted">Reviso mi correo diaramente</p>
+                        <a href="mailto:rcarmonah@outlook.com" class="text-primary">rcarmonah@outlook.com</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-4 mt-4 pt-2">
+                <div class="contact-detail text-center">
+                    <div class="icon">
+                        <li class="list-inline-item me-2"><img src="assets/img/linkedinicon2.svg" alt="Linkedin" width="26" height="26"></li>
+                    </div>
+                    <div class="content mt-4">
+                        <h5 class="title">Linkedin</h5>
+                        <p class="text-light-muted">Constantemente cerfiticandome,</p>
+                        <a href="https://www.linkedin.com/in/rodrigocarmonah" target="_blank" class="map-popup-view text-primary">rodrigocarmonah</a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<section class="section pt-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="custom-form mb-sm-30">
+                    <form action="https://formsubmit.co/kmkze_rc@hotmail.com" method="POST" name="myForm" onsubmit="return validateForm()">
+                        <input type="hidden" name="_subject" value="Nuevo envio!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://rodrigocarmonaherrera.com/formularioenviado">
+                        <p id="error-msg"></p>
+                        <div id="simple-msg"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <input name="name" id="name" type="text" class="form-control border rounded" placeholder="Nombre :">
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <input name="email" id="email" type="email" class="form-control border rounded" placeholder="Correo :">
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input name="subject" id="subject" class="form-control border rounded" placeholder="Asunto :">
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end col-->
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Mensaje :"></textarea>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                        <div class="row">
+                            <div class="col-sm-12 text-end">
+                                <input type="submit" id="submit" name="send" class="submitBnt btn btn btn-primary rounded" value="Enviar">
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </form><!--end form-->
+                </div><!--end custom-form-->
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Contact End -->
+
+
+<!-- Javascript -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Slider -->
+<script src="assets/js/tiny-slider.js"></script>
+<script src="assets/js/tiny-slider-init.js"></script>
+
+<!-- MK Lightbox -->
+<script src="assets/js/mklb.js"></script>
+
+<!-- Contact -->
+<script src="assets/js/contact.js"></script>
+
+<!-- Counter init -->
+<script src="assets/js/counter.init.js"></script>
+
+<!-- Feather icon -->
+<script src="assets/js/feather.min.js"></script>
+
+<!--Partical js-->
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/particles.app.js"></script>
+
+<!-- Typed -->
+<script src="assets/js/typed.js"></script>
+<script src="assets/js/typed.init.js"></script>
+
+<!-- Switcher -->
+<script src="assets/js/switcher.js"></script>
+
+<!-- Main Js -->
+<script src="assets/js/app.js"></script>
 </body>
 </html>
