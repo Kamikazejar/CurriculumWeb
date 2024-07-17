@@ -59,3 +59,22 @@ function fadeIn() {
     }
   }, 200);
 }
+
+document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evitar envío por defecto
+  if (validateForm()) { // Asegurarse de que pase la validación
+    fetch('https://usebasin.com/f/567f2fa8310d', {
+      method: 'POST',
+      body: new FormData(event.target)
+    }).then(response => {
+      if (response.ok) {
+        window.location.href = 'https://rodrigocarmonaherrera.com/formularioenviado';
+      } else {
+        document.getElementById('error-msg').innerText = 'Error al enviar el formulario';
+      }
+    }).catch(error => {
+      console.error('Error:', error);
+      document.getElementById('error-msg').innerText = 'Error al enviar el formulario';
+    });
+  }
+});
