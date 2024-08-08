@@ -13,9 +13,13 @@ https://rodrigocarmonaherrera.com/
 Para llegar a este proyecto tuve que aprender cosas como:
 
 • Capacidad de trabajo con proveedores de infraestructura cloud. 
+
 • Configuración completa de un servidor Ubuntu 22.04. 
+
 • Configuración de dominios, subdominios y certificados SSL. 
+
 • Deploy de aplicaciones en Python, Ruby, PHP, WordPress y Node.js 
+
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
